@@ -1,0 +1,412 @@
+
+
+/*=========================================================
+                    TESTIMONIALS
+=========================================================*/
+
+.testimonials{
+
+    position:relative;
+
+    padding:140px 0;
+
+    overflow:hidden;
+
+}
+
+.testimonials-container{
+
+    width:min(92%,1180px);
+
+    margin:auto;
+
+}
+
+/*=========================
+        TOP
+=========================*/
+
+.testimonials-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:70px;
+
+}
+
+/*=========================
+        BUTTONS
+=========================*/
+
+.testimonial-controls{
+
+    display:flex;
+
+    gap:14px;
+
+}
+
+.testimonial-controls button{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.testimonial-controls button:hover{
+
+    background:#3B82F6;
+
+    border-color:#3B82F6;
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================
+        SLIDES
+=========================*/
+
+.testimonial-slide{
+
+    display:none;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:60px;
+
+}
+
+.testimonial-slide.active{
+
+    display:grid;
+
+    animation:testimonialFade .6s ease;
+
+}
+
+@keyframes testimonialFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================
+        CARD
+=========================*/
+
+.testimonial-card{
+
+    padding-bottom:45px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.testimonial-card h3{
+
+    font-family:'DM Serif Display',serif;
+
+    font-size:1.45rem;
+
+    line-height:1.8;
+
+    font-weight:400;
+
+    color:#ffffff;
+
+}
+
+.testimonial-card h3 span{
+
+    color:#3B82F6;
+
+    font-size:2rem;
+
+}
+.testimonial-card h3{
+
+    font-size:1.45rem;
+
+    line-height:1.8;
+
+    color:#ffffff;
+
+    font-family:'DM Serif Display',serif;
+
+    font-weight:400;
+
+}
+
+.testimonial-card h3 span{
+
+    color:#3B82F6;
+
+    font-size:2.8rem;
+
+    vertical-align:middle;
+
+    line-height:0;
+
+}
+
+.testimonial-card h4{
+
+    font-size:1.05rem;
+
+    color:#ffffff;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.testimonial-card p{
+
+    color:#8f8f8f;
+
+    font-size:.95rem;
+
+}
+
+/*=========================================================
+                PAGINATION
+=========================================================*/
+
+.testimonial-pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:60px;
+
+}
+
+.testimonial-pagination span{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#3a3a3a;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.testimonial-pagination span.active{
+
+    width:34px;
+
+    border-radius:30px;
+
+    background:#3B82F6;
+
+}
+
+.testimonial-pagination span:hover{
+
+    background:#60A5FA;
+
+}
+
+/*=========================================================
+                HOVER EFFECT
+=========================================================*/
+
+.testimonial-card{
+
+    transition:.35s ease;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.testimonial-card:hover h3{
+
+    color:#3B82F6;
+
+}
+
+/*=========================================================
+                RESPONSIVE
+=========================================================*/
+
+@media(max-width:992px){
+
+.testimonials{
+
+    padding:100px 0;
+
+}
+
+.testimonials-top{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+}
+
+.testimonial-slide{
+
+    grid-template-columns:1fr;
+
+    gap:45px;
+
+}
+
+.testimonial-controls{
+
+    align-self:flex-end;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.testimonials{
+
+    padding:90px 0;
+
+}
+
+.testimonial-card{
+
+    padding-bottom:35px;
+
+}
+
+.testimonial-card h3{
+
+    font-size:1.45rem;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+
+}
+
+.testimonial-card h4{
+
+    font-size:.95rem;
+
+}
+
+.testimonial-card p{
+
+    font-size:.85rem;
+
+}
+
+.testimonial-controls button{
+
+    width:42px;
+
+    height:42px;
+
+}
+
+}
+
+@media(max-width:520px){
+
+.testimonial-slide{
+
+    gap:35px;
+
+}
+
+.testimonial-card h3{
+
+    font-size:1.2rem;
+
+}
+
+.testimonial-controls{
+
+    width:100%;
+
+    justify-content:flex-end;
+
+}
+
+.testimonial-pagination{
+
+    margin-top:40px;
+
+}
+
+}
+
+@media(max-width:380px){
+
+.testimonial-card h3{
+
+    font-size:1.05rem;
+
+}
+
+.testimonial-controls button{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+.testimonial-controls button i{
+
+    font-size:1rem;
+
+}
+
+}

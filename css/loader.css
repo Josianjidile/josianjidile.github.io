@@ -1,0 +1,212 @@
+
+
+
+/* =========================================================
+                    PRELOADER
+========================================================= */
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+
+    height:100vh;
+
+    background:#090909;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:opacity .8s ease,
+               visibility .8s ease;
+
+}
+
+.loader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+/* ===========================
+      CONTENT
+=========================== */
+
+.loader-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+/* ===========================
+      LOGO
+=========================== */
+
+.loader-logo{
+
+    margin-bottom:35px;
+
+}
+
+.loader-logo .logo{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:#fff;
+
+    text-decoration:none;
+
+}
+
+/* ===========================
+      LOADING BAR
+=========================== */
+
+.loader-bar{
+
+    width:260px;
+
+    height:2px;
+
+    background:rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+    border-radius:50px;
+
+}
+
+.loader-progress{
+
+    width:0;
+
+    height:100%;
+
+    background:var(--primary);
+
+    animation:loadingBar 2.3s ease forwards;
+
+}
+
+/* ===========================
+      DOTS
+=========================== */
+
+.loader-dots{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:26px;
+
+}
+
+.loader-dots span{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    animation:bounce .8s infinite;
+
+}
+
+.loader-dots span:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.loader-dots span:nth-child(3){
+
+    animation-delay:.30s;
+
+}
+
+/* ===========================
+      BAR ANIMATION
+=========================== */
+
+@keyframes loadingBar{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+/* ===========================
+      DOT ANIMATION
+=========================== */
+
+@keyframes bounce{
+
+    0%,
+    100%{
+
+        transform:translateY(0);
+
+        opacity:.5;
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ===========================
+      MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .loader-logo .logo{
+
+        font-size:1.5rem;
+
+    }
+
+    .loader-bar{
+
+        width:180px;
+
+    }
+
+}

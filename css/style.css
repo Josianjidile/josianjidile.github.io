@@ -1,0 +1,71 @@
+
+@import url("./variables.css");
+@import url("./reset.css");
+@import url("./layout.css");
+@import url("./loader.css");
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./about.css");
+@import url("./tech.css");
+@import url("./works.css");
+@import url("./experience.css");
+@import url("./testimonials.css");
+@import url("./contact.css");
+@import url("./footer.css");
+@import url("./animations.css");
+@import url("./responsive.css");
+
+
+
+/*=========================================================
+            GLOBAL SECTION SPACING
+=========================================================*/
+
+.about,
+.tech-stack,
+.works,
+.experience,
+.testimonials,
+.contact{
+
+    padding-top:70px !important;
+    padding-bottom:70px !important;
+
+}
+
+
+/*=========================================================
+                MOBILE SPACING
+=========================================================*/
+
+@media(max-width:768px){
+
+    .about,
+    .tech-stack,
+    .works,
+    .experience,
+    .testimonials,
+    .contact{
+
+        padding-top:50px !important;
+        padding-bottom:50px !important;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

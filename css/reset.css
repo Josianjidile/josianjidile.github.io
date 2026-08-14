@@ -1,0 +1,228 @@
+/*=========================================================
+                    RESET / GLOBAL
+=========================================================*/
+
+/*=========================
+        GOOGLE FONTS
+=========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+
+/*=========================
+        GLOBAL RESET
+=========================*/
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+/*=========================
+        HTML
+=========================*/
+
+html{
+
+    scroll-behavior:smooth;
+
+    width:100%;
+
+    max-width:100%;
+
+    overflow-x:hidden;
+
+}
+
+
+/*=========================
+        BODY
+=========================*/
+
+body{
+
+    background:var(--background);
+
+    color:#fff;
+
+    font-family:'Outfit',sans-serif;
+
+    width:100%;
+
+    max-width:100%;
+
+    overflow-x:hidden;
+
+    position:relative;
+
+    overscroll-behavior-x:none;
+
+}
+
+
+/*=========================
+        BODY GLOW - TOP LEFT
+=========================*/
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:650px;
+
+    height:650px;
+
+    top:-220px;
+
+    left:-220px;
+
+    max-width:100vw;
+
+    max-height:100vh;
+
+    background:#3B82F6;
+
+    opacity:.16;
+
+    filter:blur(180px);
+
+    z-index:-2;
+
+    pointer-events:none;
+
+}
+
+
+/*=========================
+        BODY GLOW - BOTTOM RIGHT
+=========================*/
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:650px;
+
+    height:650px;
+
+    right:-220px;
+
+    bottom:-220px;
+
+    max-width:100vw;
+
+    max-height:100vh;
+
+    background:#3B82F6;
+
+    opacity:.12;
+
+    filter:blur(180px);
+
+    z-index:-2;
+
+    pointer-events:none;
+
+}
+
+
+/*=========================
+        MAIN STRUCTURE
+=========================*/
+
+main{
+
+    width:100%;
+
+    max-width:100%;
+
+}
+
+
+/*=========================
+        SECTIONS
+=========================*/
+
+section,
+header,
+footer{
+
+    max-width:100%;
+
+}
+
+
+/*=========================
+        MEDIA
+=========================*/
+
+img,
+video,
+svg,
+canvas{
+
+    max-width:100%;
+
+}
+
+
+/*=========================
+        BUTTONS / LINKS
+=========================*/
+
+button,
+a{
+
+    -webkit-tap-highlight-color:transparent;
+
+}
+
+
+/*=========================
+        BLUE GLOW ANIMATIONS
+=========================*/
+
+@keyframes blueGlow{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(-120px,80px);
+
+    }
+
+}
+
+
+@keyframes blueGlow2{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(120px,-90px);
+
+    }
+
+}

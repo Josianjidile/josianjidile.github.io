@@ -1,0 +1,218 @@
+
+/*=========================================================
+                        LAYOUT
+=========================================================*/
+
+@keyframes gridMove{
+
+    from{
+
+        background-position:0 0;
+
+    }
+
+    to{
+
+        background-position:50px 50px;
+
+    }
+
+}
+
+.nav-container{
+
+    width:min(92%,1280px);
+
+    height:72px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.hero-container{
+
+    width:min(92%,1280px);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.section-label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:18px;
+
+}
+
+.section-label span{
+
+    width:45px;
+
+    height:2px;
+
+    background:var(--primary);
+
+}
+
+.section-label p{
+
+    color:var(--primary);
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+}
+
+
+.nav-container{
+
+    width:min(92%,1280px);
+
+    height:72px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+.hero-container{
+
+    width:min(92%,1280px);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.section-label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:18px;
+
+}
+
+.section-label span{
+
+    width:45px;
+
+    height:2px;
+
+    background:var(--primary);
+
+}
+
+.section-label p{
+
+    color:var(--primary);
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+}
+
+
+
+/*=========================================================
+                SECTION SEPARATOR
+=========================================================*/
+
+.section-separator{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+    height:1px;
+
+    margin:0 auto;
+
+}
+
+.section-separator::before{
+
+    content:"";
+
+    width:100%;
+
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(59,130,246,.08),
+        rgba(59,130,246,.35),
+        rgba(59,130,246,.08),
+        transparent
+    );
+
+}
+
+.section-separator::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:7px;
+
+    height:7px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    box-shadow:
+        0 0 10px rgba(59,130,246,.6),
+        0 0 25px rgba(59,130,246,.25);
+
+}
+

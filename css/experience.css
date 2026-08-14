@@ -1,0 +1,664 @@
+
+/*====================================
+        ENTERPRISE DASHBOARD
+====================================*/
+
+.summary-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+    color:#ffffff;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+.status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    background:#22c55e;
+
+    border-radius:50%;
+
+    animation:pulse 1.6s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(34,197,94,.6);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 14px rgba(34,197,94,0);
+
+    }
+
+}
+
+/* Dashboard */
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.dashboard-card{
+
+    background:#0f0f0f;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:18px;
+
+    padding:22px;
+
+    text-align:center;
+
+ transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--primary);
+
+}
+
+.dashboard-card h2{
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+    margin-bottom:8px;
+
+}
+
+.dashboard-card p{
+
+    color:#bdbdbd;
+
+    font-size:.8rem;
+
+}
+
+/* Modules */
+
+.module-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:18px;
+
+}
+
+.module-tags span{
+
+    padding:8px 14px;
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:30px;
+
+    font-size:.72rem;
+
+    color:#d6d6d6;
+
+    transition:.3s;
+
+}
+
+.module-tags span:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================================================
+                    EXPERIENCE
+=========================================================*/
+
+.experience{
+
+    position:relative;
+
+    padding:140px 0;
+
+    overflow:hidden;
+
+}
+
+.experience-container{
+
+    width:min(92%,1180px);
+
+    margin:auto;
+
+}
+
+/*=========================
+        TITLE
+=========================*/
+
+.experience-title{
+
+    font-family:'DM Serif Display',serif;
+
+    font-size:3rem;
+
+    font-weight:400;
+
+    color:#ffffff;
+
+    margin:20px 0;
+
+    line-height:1.2;
+
+}
+
+.experience-title span{
+
+    color:var(--primary);
+
+}
+
+.experience-subtitle{
+
+    max-width:720px;
+
+    color:#bdbdbd;
+
+    line-height:1.9;
+
+    margin-bottom:80px;
+
+    font-size:1rem;
+
+}
+
+/*=========================================================
+                EXPERIENCE ITEM
+=========================================================*/
+
+.experience-item{
+
+    display:grid;
+
+    grid-template-columns:180px 1fr 240px;
+
+    gap:55px;
+
+    padding:55px 0;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+.experience-item:last-child{
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+/*=========================
+            DATE
+=========================*/
+
+.experience-date{
+
+    color:var(--primary);
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+}
+
+/*=========================
+          CONTENT
+=========================*/
+
+.experience-content h3{
+
+    font-family:'DM Serif Display',serif;
+
+    font-size:2rem;
+
+    font-weight:400;
+
+    color:#ffffff;
+
+    margin-bottom:10px;
+
+}
+
+.experience-content h4{
+
+    color:#9ca3af;
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    margin-bottom:24px;
+
+}
+
+.experience-content p{
+
+    color:#c8c8c8;
+
+    line-height:1.9;
+
+    margin-bottom:28px;
+
+    max-width:680px;
+
+}
+
+/*=========================
+          BULLETS
+=========================*/
+
+.experience-content ul{
+
+    list-style:none;
+
+}
+
+.experience-content ul li{
+
+    position:relative;
+
+    padding-left:28px;
+
+    margin-bottom:16px;
+
+    color:#d7d7d7;
+
+    line-height:1.8;
+
+    transition:.3s;
+
+}
+
+.experience-content ul li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:11px;
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    box-shadow:0 0 12px rgba(59,130,246,.45);
+
+}
+
+.experience-content ul li:hover{
+
+    color:#ffffff;
+
+    transform:translateX(6px);
+
+}
+
+
+/*=========================================================
+                TECH STACK (RIGHT)
+=========================================================*/
+
+.experience-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:flex-end;
+
+    align-content:flex-start;
+
+    gap:12px;
+
+}
+
+.experience-stack span{
+
+    padding:10px 18px;
+
+    border-radius:40px;
+
+    background:#141414;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    color:#cfcfcf;
+
+    font-size:.78rem;
+
+    transition:.35s ease;
+
+    cursor:default;
+
+}
+
+.experience-stack span:hover{
+
+    background:var(--primary);
+
+    border-color:var(--primary);
+
+    color:#ffffff;
+
+    transform:translateY(-4px);
+
+}
+
+/*=========================================================
+                    IMPACT CARDS
+=========================================================*/
+
+.experience-impact{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:80px;
+
+}
+
+.impact-card{
+
+    background:#101010;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s ease;
+
+}
+
+.impact-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(59,130,246,.12);
+
+}
+
+.impact-card h2{
+
+    font-family:'DM Serif Display',serif;
+
+    font-size:2.6rem;
+
+    font-weight:400;
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+.impact-card p{
+
+    color:#c8c8c8;
+
+    font-size:.92rem;
+
+    line-height:1.7;
+
+}
+
+/*=========================================================
+                    ENTERPRISE NOTE
+=========================================================*/
+
+.experience-note{
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:flex-start;
+
+    margin-top:80px;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    background:#101010;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+
+}
+
+.experience-note:hover{
+
+    border-color:var(--primary);
+
+}
+
+.experience-note i{
+
+    font-size:2.3rem;
+
+    color:var(--primary);
+
+    flex-shrink:0;
+
+}
+
+.experience-note h4{
+
+    font-size:1.15rem;
+
+    color:#ffffff;
+
+    margin-bottom:12px;
+
+}
+
+.experience-note p{
+
+    color:#bdbdbd;
+
+    line-height:1.9;
+
+}
+
+/*=========================================================
+                    RESPONSIVE
+=========================================================*/
+
+@media(max-width:1100px){
+
+.experience-item{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+}
+
+.experience-stack{
+
+    justify-content:flex-start;
+
+}
+
+.experience-impact{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.experience{
+
+    padding:80px  0;
+    margin-top: 2;
+
+}
+
+.experience-title{
+
+    font-size:2.2rem;
+
+}
+
+.experience-subtitle{
+
+    font-size:.95rem;
+
+}
+
+.experience-content h3{
+
+    font-size:1.6rem;
+
+}
+
+.experience-impact{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+.impact-card{
+
+    padding:28px 18px;
+
+}
+
+.impact-card h2{
+
+    font-size:2rem;
+
+}
+
+.experience-note{
+
+    flex-direction:column;
+
+}
+
+}
+
+@media(max-width:520px){
+
+.experience-title{
+
+    font-size:1.8rem;
+
+}
+
+.experience-impact{
+
+    grid-template-columns:1fr;
+
+}
+
+.experience-stack{
+
+    gap:8px;
+
+}
+
+.experience-stack span{
+
+    font-size:.72rem;
+
+    padding:8px 14px;
+
+}
+
+.experience-content h3{
+
+    font-size:1.4rem;
+
+}
+
+.experience-content p{
+
+    font-size:.9rem;
+
+}
+
+.experience-note{
+
+    padding:25px;
+
+}
+
+}
